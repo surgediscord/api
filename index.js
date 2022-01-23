@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
 
 app.post('/dblhook', async (req, res) => {
   if (req.headers.authorization !== process.env.API_PASS) return res.json({"message": "invalid api key"})
+  console.log(req.body)
   let content = `<@${req.body.user} voted for <@${req.body.bot}`
   if (req.body.type === "test") content = "TESTING ONLY"
 
