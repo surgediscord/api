@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "express": "^4.17.2"
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "phin": "^3.6.1"
   },
   "name": "surgediscord-api",
   "version": "1.0.0",
   "description": "API for Surge's usage",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
